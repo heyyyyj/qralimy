@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    color: #292929;
+    text-decoration: none;
+    box-sizing: border-box;
+    /* font-family: 'GangwonEdu_OTFBoldA'; */
+}
+
+/* progress bar */
+.progress-container{
+    left: 0;
+    width: 100%;
+    height: 4px;
+    margin-bottom: 0;
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    overflow: hidden;
+    background-color: whitesmoke;
+    content: "";
+    display: table;
+    table-layout: fixed;
+}
+.progress-bar{
+    width: 0%;
+    float: left;
+    height: 100%;
+    z-index: 999;
+    max-width: 100%;
+    background-color: #fae100;
+    -webkit-transition: width .4s ease;
+    -o-transition: width .4s ease;
+    transition: width .4s ease;
+}
+/* progress bar end */
+
+
+/***** header *****/    
+header{
+    text-align: center;
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 3px 3px rgba(185, 185, 185, 0.4);
+}
+header h1{
+    font-size: 28px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+/* header nav */
+.nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul li:hover a{
+    border-bottom: 2px solid #292929;
+}
+/***** header end *****/
+
+/***** main *****/
+main{
+    position: relative;
+    width: 100%;
+    background-position: 0% 0%;
+    background-image: url('/imgs/bg_1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 20%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.main_top{
+    width: 100%;
+    /* background-color: #fff; */
+    overflow: hidden;
+}
+.marquee{
+    padding: 0;
+    overflow: hidden;
+    height: 30px;
+    background-color: black;
+}
+.marquee span{
+    position: relative;
+    padding: 0 40px 0 0;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fae100;
+    text-transform: uppercase;
+    overflow: visible;
+    white-space: nowrap;
+}
+.marquee span>b{
+    color: #fff;
+}
+
+/* slide */
+.slick-dots li>button{
+    padding: 0;
+    margin: 2px 4px;
+    border-radius: 100%;
+    width: 8px; height: 8px;
+    box-shadow: 1px 1px 3px rgba(185, 185, 185, .8);
+    border: none;
+    font-size: 0;
+}
+.slick-dots li>button{
+    padding: 0;
+    margin: 2px 4px;
+    border-radius: 100%;
+    width: 8px; height: 8px;
+    box-shadow: 1px 1px 3px rgba(185, 185, 185, .8);
+    border: none;
+    font-size: 0;
+}
+.slick-active>button{background-color: rgb(255, 255, 255);}
+
+
+
+
+@media only screen and (max-width:640px){
+    
+    /* header nav */
+    .nav ul li{
+        padding: 6px 8px;
+        margin: 0 4px;
+        float: left;
+        cursor: pointer;
+    }
+    .nav ul li a{
+        font-size: 14px;
+        color: #292929;
+    }
+    /***** header end *****/
+
+    /***** main *****/
+    
+    /***** footer *****/
+    footer{
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0px -3px 3px rgba(185, 185, 185, 0.2);
+    }
+    footer div img{
+        width: 120px;
+        margin-top: 6px;
+    }
+    footer div p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    /***** footer end *****/
+}
+
+
+
+
+@media only screen and (max-width:1190px) and (min-width:641px){
+    
+    /* header nav */
+    .nav ul li{
+        padding: 6px 8px;
+        margin: 0 4px;
+        float: left;
+        cursor: pointer;
+    }
+    .nav ul li a{
+        font-size: 14px;
+        color: #292929;
+    }
+    /***** header end *****/
+
+    /***** main *****/
+    
+    /***** main end *****/
+
+    /***** footer *****/
+    footer{
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0px -3px 3px rgba(185, 185, 185, 0.2);
+    }
+    footer div img{
+        width: 160px;
+        margin-top: 6px;
+    }
+    footer div p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    /***** footer end *****/
+}
+@media only screen and (min-width:1200px){
+    
+    /* header nav */
+    header{
+        width: 100%;
+    }
+    .head_container{
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .nav ul li{
+        padding: 10px 8px;
+        margin: 4px 20px;
+        float: left;
+        cursor: pointer;
+    }
+    .nav ul li a{
+        font-size: 16px;
+        color: #292929;
+    }
+    /***** header end *****/
+
+    /***** main *****/
+    
+    /***** main end *****/
+
+    /***** footer *****/
+    footer{
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0px -3px 3px rgba(185, 185, 185, 0.2);
+    }
+    footer div img{
+        width: 160px;
+        margin-top: 6px;
+    }
+    footer div p{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    /***** footer end *****/
+}
+
+
+
+
+

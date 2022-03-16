@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR알리미</title>
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/jquery-sakura.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jquery-sakura.js"></script>
+    <script src="http://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- <script>
+        $(window).load(function () {
+            $('body').sakura();
+        });
+    </script> -->
+    
+</head>
+<body>
+    <section class="wrap">
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+        <div class="contain">
+            <header>
+                <div class="head_container">
+                    <h1><a href="QR-Alimy.html">QR Alimy</a></h1>
+                    <div class="nav">
+                        <ul>
+                            <li><a href="brand-info.html">Brand Info</a></li>
+                            <li><a href="download.html">Download</a></li>
+                            <!-- <li><a href="">Award</a></li> -->
+                            <li><a href="q&a.html">Q&A</a></li>
+                            <li><a href="event.html">Event</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="main_container">
+                    <div class="main_top">
+                            <p><img src="imgs/001.png" alt=""></p>
+                    </div>
+                    <div class="marquee">
+                        <span>당신의 개인정보 <b>QR 알리미</b>가 지켜드립니다</span>
+                        <span><b>QR Alimy</b>will protect your personal information</span>
+                        <span>당신의 개인정보 <b>QR 알리미</b>가 지켜드립니다</span>
+                        <span><b>QR Alimy</b>will protect your personal information</span>
+                    </div>
+
+                    <script type="text/javascript">
+                        $('.marquee').marquee({
+                            //duration in milliseconds of the marquee
+                            duration: 15000,
+                            //gap in pixels between the tickers
+                            gap: 0,
+                            //time in milliseconds before the marquee will start animating
+                            delayBeforeStart: 0,
+                            //'left' or 'right'
+                            direction: 'left',
+                            //true or false - should the marquee be duplicated to show an effect of continues flow
+                            duplicated: true,
+                            startVisible: true,
+                        });
+                    </script>
+
+                    <div class="slide">
+                        <section class="autoplay">
+                            <div><a href="#"><img src="imgs/QR_instagram_1.png" alt=""></a></div>
+                            <div><a href="#"><img src="imgs/QR알리미_코드.png" alt=""></a></div>
+                            <div><a href="#"><img src="imgs/QR_instagram_1.png" alt=""></a></div>
+                            <div><a href="#"><img src="imgs/QR_instagram_1.png" alt=""></a></div>
+                        </section>
+
+                        <script>
+                            $('.autoplay').slick({
+                                slidesToShow: 3,
+                                slidesToScroll: 1,
+                                autoplay: true,
+                                autoplaySpeed: 2000,
+                                arrows: false,
+                                dots: true,
+                                dotsClass: "slick-dots",
+                                pauseOnHover: false,
+                            });
+                        </script>
+
+                    </div>
+                    <article>
+                        <div class="article_wrap">
+                            <div class="article_1">
+                                <div class="article_text">
+                                    <h2>01</h2>
+                                    <p>휴대폰 번호 유출로 인한 범죄 노출</p>
+                                    <p>QR알리미는 휴대폰번호 노출이 없기 때문에 스팸문자 및 범죄에 보다 안전한 생활이 가능합니다</p>
+                                </div>
+                                <p><img src="imgs/article_1.png" alt=""></p>
+                            </div>
+                            <div class="article_1">
+                                <p><img src="imgs/article_1.png" alt=""></p>
+                                <div class="article_text">
+                                    <h2>02</h2>
+                                    <p>휴대폰 번호 유출로 인한 스팸문자</p>
+                                    <p>😰Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae minima fugit doloremque natus dolor at odio voluptatibus distinctio ipsum consequuntur, est consequatur cupiditate officiis vitae corporis numquam ipsa facilis tenetur.</p>
+                                </div>
+                                <p><img src="imgs/article_1.png" alt=""></p>
+                            </div>
+                            <button><a href="#"><img src="imgs/btn_down.png"alt="">Download</a></button>
+                        </div>
+                    </article>
+                    <div class="jeje_container">
+                        <div class="jeje_top">
+                            <dl class="utilBtm">
+                                <dt class="hidden">하단 유틸메뉴</dt>
+                                <dd class="txt"><a href="http://www.jejecomms.com/">회사소개</a></dd>
+                                <dd class="txt"><a href="https://shiftapp.net/QR/term/qr_term-1.html">이용약관</a></dd>
+                                <dd class="txt"><a href="https://shiftapp.net/QR/term/qr_term-2.html">개인정보처리방침</a></dd>
+                                <!-- <dd class="txt"><a href="void(0);" onclick="alert('서비스 준비중입니다');return false;">운영정책</a></dd> -->
+                            </dl>
+                        </div>
+                        <section>
+                            <div class="jeje_bottom">
+                                <p>(주)제제컴즈</p>
+                                <p>대표자 : 김준강</p>
+                                <p>사업자등록번호 641-88-00828</p>
+                                <p>통신판매업신고 제2021-성남수정-1335호</p>
+                                <p>13558 경기도 성남시 분당구 성남대로331번길 8 (킨스타워) 20층 9호</p>
+                            </div>
+                            <div class="contect">
+                                <p><span>T.</span>070-4252-5571</p>
+                                <p><span>F.</span>031-754-8715</p>
+                                <p><span>E.</span>help@jejecomms.com</p>
+                            </div>
+                                
+                        </section>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="foot_container">
+                    <div>
+                        <a href="http://www.jejecomms.com/"><img src="./imgs/Asset 11@3x.png" alt="로고"></a>
+                        <p>© 2021 JEJE CoMMS. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
+</body>
+</html>
+
+<footer>
+    
+</footer>
